@@ -3,6 +3,7 @@ if exists('b:current_syntax')
 endif
 
 runtime! syntax/debcopyright.vim
+unlet b:current_syntax
 
 syntax keyword dep5Todo contained
   \ FIXME
