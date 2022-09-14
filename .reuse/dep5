@@ -3,10 +3,13 @@ Upstream-Name: dep5.vim
 Upstream-Contact: ilkecan <ilkecan@protonmail.com>
 Source: https://github.com/ilkecan/dep5.vim
 
-Files: *.md
+Files:
+  *.editorconfig
+  *.md
 Copyright: 2022 ilkecan <ilkecan@protonmail.com>
 License: CC-BY-SA-4.0
 
-Files: *.vim
+Files:
+  *.vim
 Copyright: 2022 ilkecan <ilkecan@protonmail.com>
 License: MPL-2.0
