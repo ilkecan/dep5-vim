@@ -5,13 +5,17 @@ endif
 runtime! syntax/debcopyright.vim
 unlet b:current_syntax
 
-syntax keyword dep5Todo contained
+syntax match dep5Comment '^#.*$'
+  \ contains=
+    \ @Spell,
+    \ dep5Todo,
+syntax keyword dep5Todo
+  \ contained
   \ FIXME
   \ TODO
   \ XXX
-highlight link dep5Todo Todo
 
-syntax match dep5Comment '^#.*$' contains=dep5Todo,@Spell
 highlight link dep5Comment Comment
+highlight link dep5Todo Todo
 
 let b:current_syntax = 'dep5'
